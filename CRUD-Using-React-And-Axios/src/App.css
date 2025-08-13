@@ -1,5 +1,5 @@
 body{
-    background-color: #17202a;
+    background-color: #F4F6F8;
 }
 
 html{
@@ -7,11 +7,12 @@ html{
     font-family: urbanist;
 }
 
+
 p,a,li,input{
     font-size: 1.6rem;
     line-height: 1.5;
     letter-spacing: 0.12rem;
-    color: #fff;
+    color: #FFFFFF ;
 }
 
 button{
@@ -19,7 +20,8 @@ button{
     border-radius: 0.3rem;
     cursor: pointer;
     border: 0;
-    background-color: hsl(160, 80%, 48%);
+    background-color: #00B894 ;
+    color: white;
     box-shadow: rgb(0, 0, 0 / 5% ) 0 0 8px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -33,9 +35,10 @@ button{
 
 
 button:hover{
-    background-color: hsl(160, 80%, 48%);
-    color: hsl(0, 0%x, 100%);
+    background-color: #019875;
+    color: white;
     box-shadow: rgb(9, 172, 115 ) 0 7 19px 0px;
+    font-weight: bold;
 }
 
 .main-section{
@@ -87,7 +90,7 @@ form{
     
 
     & li{
-        background-color: #212f3c;
+        background-color: #1E1E2F ;
         padding: 1.6rem;
         border-radius: 0.3rem;
         -webkit-border-radius: 0.3rem;
@@ -95,15 +98,18 @@ form{
         -o-border-radius: 0.3rem;
         -ms-border-radius: 0.3rem;
         list-style-position: inside;
-        border-left: 0.2rem solid #fff;
+        border-left: 0.5rem solid #00e1ff;
     }   
 
     & .btn-delete{
-        background-color: #e74c3c;
+        background-color: #E17055 ;
+        color: #FFFFFF ;
 
         &:hover {
             color: hsl(0, 0%, 100%);
+            background-color: #C0392B;
             box-shadow: rgb(167, 54, 13) 0px 7px 19px 0px;
+            font-weight: bold;
             }
         }
     }
