@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getPost } from "../api/PostApi";
+import "../App.css";
 
 export const Posts = () => {
   const [data, setData] = useState([]);
@@ -15,20 +16,20 @@ export const Posts = () => {
 
   return (
     <section className="section-post">
-      <ul>
+      <ol>
         {data.map((curElem) => {
           const { id, body, title } = curElem;
           return (
             <li key={id}>
               {/* key is chosen as id because it is unique */}
-              <p>{title}</p>
-              <p>{body}</p>
+              <p>Title: {title}</p>
+              <p>Body: {body}</p>
               <button>Edit</button>
-              <button>Delete</button>
+              <button className="btn-delete">Delete</button>
             </li>
           );
         })}
-      </ul>
+      </ol>
     </section>
   );
 };
